@@ -8,6 +8,11 @@ class NewTicketControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
+    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this)
+  }
+
+  handleTroubleshootingConfirmation () {
+    this.setState({formVisibleOnPage: true});
   }
 
   render() {
@@ -15,7 +20,7 @@ class NewTicketControl extends React.Component {
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewTicketForm />;
     } else {
-      currentlyVisibleContent = <ConfirmationQuestions />;
+      currentlyVisibleContent = <ConfirmationQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation} />;
     }
     return (
       <div>
