@@ -1,4 +1,5 @@
 import React from 'react';
+import NewTicketForm from './NewTicketForm';
 import ConfirmationQuestions from './ConfirmationQuestions';
 
 class NewTicketControl extends React.Component {
