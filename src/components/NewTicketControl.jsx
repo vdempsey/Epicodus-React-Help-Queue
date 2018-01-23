@@ -8,9 +8,10 @@ class NewTicketControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      formVisibleOnPage: false,
+      testState: 'hey!'
     };
-    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this)
+    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
   }
 
   handleTroubleshootingConfirmation () {
